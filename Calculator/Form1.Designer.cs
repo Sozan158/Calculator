@@ -32,9 +32,9 @@ namespace Calculator
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -68,29 +68,29 @@ namespace Calculator
             this.label3.TabIndex = 2;
             this.label3.Text = "KẾT QUẢ";
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 31);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtA.Location = new System.Drawing.Point(116, 31);
+            this.txtA.Multiline = true;
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(292, 23);
+            this.txtA.TabIndex = 3;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 76);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(292, 23);
-            this.textBox2.TabIndex = 4;
+            this.txtB.Location = new System.Drawing.Point(116, 76);
+            this.txtB.Multiline = true;
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(292, 23);
+            this.txtB.TabIndex = 4;
             // 
-            // textBox3
+            // txtC
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 117);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(292, 23);
-            this.textBox3.TabIndex = 5;
+            this.txtC.Location = new System.Drawing.Point(116, 117);
+            this.txtC.Multiline = true;
+            this.txtC.Name = "txtC";
+            this.txtC.Size = new System.Drawing.Size(292, 23);
+            this.txtC.TabIndex = 5;
             // 
             // button1
             // 
@@ -101,6 +101,7 @@ namespace Calculator
             this.button1.TabIndex = 6;
             this.button1.Text = "Cộng";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -109,9 +110,9 @@ namespace Calculator
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(423, 239);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtC);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -129,9 +130,9 @@ namespace Calculator
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.Button button1;
     }
 }
