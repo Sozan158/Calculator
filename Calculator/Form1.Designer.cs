@@ -35,7 +35,8 @@ namespace Calculator
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCong = new System.Windows.Forms.Button();
+            this.btnTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,16 +93,27 @@ namespace Calculator
             this.txtC.Size = new System.Drawing.Size(292, 23);
             this.txtC.TabIndex = 5;
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.ForeColor = System.Drawing.Color.Crimson;
-            this.button1.Location = new System.Drawing.Point(321, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCong.ForeColor = System.Drawing.Color.Crimson;
+            this.btnCong.Location = new System.Drawing.Point(321, 161);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(87, 47);
+            this.btnCong.TabIndex = 6;
+            this.btnCong.Text = "Cộng";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
+            // 
+            // btnTru
+            // 
+            this.btnTru.ForeColor = System.Drawing.Color.Crimson;
+            this.btnTru.Location = new System.Drawing.Point(216, 161);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(87, 47);
+            this.btnTru.TabIndex = 7;
+            this.btnTru.Text = "Trừ";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
             // 
             // Form1
             // 
@@ -109,7 +121,8 @@ namespace Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(423, 239);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTru);
+            this.Controls.Add(this.btnCong);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
@@ -133,7 +146,8 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCong;
+        private System.Windows.Forms.Button btnTru;
     }
 }
 
